@@ -141,16 +141,16 @@ class MainActivity : AppCompatActivity() {
         //  but remember that they are drawables, not strings.
         when(lemonadeState){
             SELECT->textAction.setText("click to selct a lemon")
-            SELECT->textAction.setText("click to juice the lemon")
-            SELECT->textAction.setText("Click to drink your lemonade")
-            SELECT->textAction.setText("Click to start again")
+            SQUEEZE->textAction.setText("click to juice the lemon")
+            DRINK->textAction.setText("Click to drink your lemonade")
+            RESTART->textAction.setText("Click to start again")
 
         }
         when(lemonadeState){
             SELECT->lemonImage?.setImageResource(R.drawable.lemon_tree)
-            SELECT->lemonImage?.setImageResource(R.drawable.lemon_squeeze)
-            SELECT->lemonImage?.setImageResource(R.drawable.lemon_drink)
-            SELECT->lemonImage?.setImageResource(R.drawable.lemon_restart)
+            SQUEEZE->lemonImage?.setImageResource(R.drawable.lemon_squeeze)
+            DRINK->lemonImage?.setImageResource(R.drawable.lemon_drink)
+            RESTART->lemonImage?.setImageResource(R.drawable.lemon_restart)
         }
     }
 
